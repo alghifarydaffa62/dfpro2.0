@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.Welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 80vh;
+}
+.Welcome h1 {
+  font-size: 2.4rem;
+}
+.Welcome button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background: #243B55;
+  cursor: pointer;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.Welcome button:hover {
+  background: transparent;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+.special {
+  background: linear-gradient(to right, #1c92d2, #f2fcfe);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,4 +1,5 @@
 import '../style/App.css'
+import { Link } from 'react-router-dom'
 import Navbar from './navbar'
 import ethereum from '../Image/coins.png'
 import code from '../Image/code.png'
@@ -32,7 +33,7 @@ function Welcome() {
                 
                 <AnimatedContent
                     distance={150}
-                    direction="vertical"
+                    direction="horizontal"
                     delay={100}
                     reverse={false}
                     config={{ tension: 80, friction: 20 }}
@@ -55,15 +56,17 @@ function Welcome() {
                     scale={1.1}
                     threshold={0.2}
                     >
-                    <div>
-                        <GradientText
-                            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                            animationSpeed={3}
-                            showBorder={true}
-                            className="custom-class"
-                        >
-                        Know More About Me
-                        </GradientText>
+                    <div className='gradientButton'>
+                        <Link to="/About">
+                            <GradientText
+                                    colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                    animationSpeed={3}
+                                    showBorder={true}
+                                    className="custom-class"
+                                >
+                                Know More About Me
+                            </GradientText>
+                        </Link>
                     </div>
                 </AnimatedContent>
             </div>

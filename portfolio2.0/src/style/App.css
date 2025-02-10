@@ -15,7 +15,7 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  min-height: 70vh;
+  min-height: 75vh;
 }
 .Welcome h1 {
   font-size: 2.4rem;
@@ -82,6 +82,7 @@ body {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 .icon img {
   width: 2vw;

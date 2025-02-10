@@ -9,7 +9,7 @@ body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-.Welcome {
+.landing {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,24 +17,8 @@ body {
   text-align: center;
   min-height: 75vh;
 }
-.Welcome h1 {
-  font-size: 2.4rem;
-}
-.Welcome button {
-  margin-top: 1.5rem;
-  padding: 0.8rem;
-  border-radius: 30px;
-  border: 1px solid transparent;
-  background: #243B55;
-  cursor: pointer;
-  min-width: 200px;
-  box-sizing: border-box;
-}
-
-.Welcome button:hover {
-  background: transparent;
-  border: 1px solid white;
-  transition: 0.5s;
+.landing h1 {
+  font-size: 3rem;
 }
 .special {
   background: linear-gradient(to right, #1c92d2, #f2fcfe);
@@ -90,4 +74,11 @@ body {
   padding: 0.5rem;
   background-color: #141e30;
   border-radius: 30px;
+}
+.Location {
+  margin-left: 2rem;
+}
+
+.Location h4 {
+  font-weight: 400;
 }

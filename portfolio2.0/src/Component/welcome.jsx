@@ -5,16 +5,17 @@ import code from '../Image/code.png'
 import uiux from '../Image/programmer.png'
 import GradientText from '../AwesomeStyle/GradientText/GradientText'
 import AnimatedContent from '../AwesomeStyle/AnimatedContent/AnimatedContent'
+import Location from './location'
 
 function Welcome() {
     return (
-        <div>
+        <div className='Welcome'>
             <Navbar/>
-            <div className='Welcome'>
+            <div className='landing'>
                 <AnimatedContent
                     distance={150}
                     direction="horizontal"
-                    delay={100}
+                    delay={50}
                     reverse={false}
                     config={{ tension: 80, friction: 20 }}
                     initialOpacity={0.2}
@@ -65,8 +66,8 @@ function Welcome() {
                         </GradientText>
                     </div>
                 </AnimatedContent>
-                
             </div>
+            <Location/> 
         </div>
         
     )

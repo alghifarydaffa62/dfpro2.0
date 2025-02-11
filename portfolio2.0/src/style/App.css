@@ -122,8 +122,21 @@ body {
 .findme {
   display: flex;
   gap: 1rem;
+  margin: 1rem 1.5rem;
 }
-.custom {
-  border-radius: 15px;
+.expert {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.myproject img {
+  width: 1.6vw;
+  height: 3.4vh;
+}
+.role h4 {
+  color: #6e92d6;
+  font-weight: 400;
 }
 

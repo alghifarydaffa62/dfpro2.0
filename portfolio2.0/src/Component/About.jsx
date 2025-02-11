@@ -6,7 +6,9 @@ import SplitText from '../AwesomeStyle/SplitText/SplitText'
 import PixelTransition from '../AwesomeStyle/PixelTransition/PixelTransition'
 import GitHubContributions from './Contribution'
 import { Link } from 'react-router-dom'
-import GradientText from '../AwesomeStyle/GradientText/GradientText'
+import FadeContent from '../AwesomeStyle/FadeContent/FadeContent'
+import ShinyText from '../AwesomeStyle/ShinyText/ShinyText'
+import arrow from '../Image/right.png'
 
 function About() {
     const handleAnimationComplete = () => {
@@ -104,57 +106,59 @@ function About() {
                         </div>
                     </AnimatedContent>
                     
-                    <div className="findme">
-                        <Link to="/About">
-                            <GradientText
-                                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                                animationSpeed={3}
-                                showBorder={true}
-                                className="custom-class"
-                            >
-                                Know More About Me
-                            </GradientText>
-                        </Link>
-                        <Link to="/About">
-                            <GradientText
-                                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                                animationSpeed={3}
-                                showBorder={true}
-                                className="custom"
-                            >
-                                Know More About Me
-                            </GradientText>
-                        </Link>
+                    <div className="role">
+                        <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                            <h4>My Area of Focus</h4>
+                        </FadeContent>
+                        <div className="expert">
+                            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                                <ShinyText text="Front End Web Development" disabled={false} speed={3} className='custom-class' />
+                            </FadeContent>
+                            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                                <ShinyText text="Web3 Enthusiast" disabled={false} speed={3} className='custom-class' />
+                            </FadeContent>
+                        </div>
                     </div>
-                    
                 </div>
 
-                <PixelTransition
-                    firstContent={
-                        <img
-                        src={profile}
-                        alt="default pixel transition content, a cat!"
-                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                <div className="picture">
+                    <PixelTransition
+                        firstContent={
+                            <img
+                            src={profile}
+                            alt="default pixel transition content, a cat!"
+                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                            />
+                        }
+                        secondContent={
+                            <div
+                            style={{
+                                width: "100%",
+                                height: "100%",
+                                display: "grid",
+                                placeItems: "center",
+                                backgroundColor: "#111"
+                            }}
+                            >
+                            <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>Hello!</p>
+                            </div>
+                        }
+                        gridSize={12}
+                        pixelColor='#ffffff'
+                        animationStepDuration={0.4}
+                        className="custom-pixel-card"
                         />
-                    }
-                    secondContent={
-                        <div
-                        style={{
-                            width: "100%",
-                            height: "100%",
-                            display: "grid",
-                            placeItems: "center",
-                            backgroundColor: "#111"
-                        }}
-                        >
-                        <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>Hello!</p>
-                        </div>
-                    }
-                    gridSize={12}
-                    pixelColor='#ffffff'
-                    animationStepDuration={0.4}
-                    className="custom-pixel-card"
-                    />
+
+                    <div className="findme">
+                        <Link to="/Project">
+                            <ShinyText text="See my Project" disabled={false} speed={3} className='custom-class' />
+                        </Link>
+                        <Link to="/Contact">
+                            <ShinyText text="Contact me" disabled={false} speed={3} className='custom-class' />
+                        </Link>
+                    </div>
+                </div>
+                
             </div>
             <GitHubContributions username="alghifarydaffa62"/> 
         </div>
@@ -162,3 +166,9 @@ function About() {
 } 
 
 export default About
+
+const myproject = (
+    <div className="myproject">
+        <img src={arrow} alt="" />
+    </div>
+)

@@ -103,10 +103,27 @@ body {
 
 .name h4 {
   font-weight: 500;
-  color: #3c61a5;
+  color: #6e92d6;
 }
 .myname {
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 2px;
 }
+.contribution {
+  margin: 2rem 8.5rem;
+}
+.contribution h4 {
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+  color: #6e92d6;
+}
+
+.findme {
+  display: flex;
+  gap: 1rem;
+}
+.custom {
+  border-radius: 15px;
+}
+

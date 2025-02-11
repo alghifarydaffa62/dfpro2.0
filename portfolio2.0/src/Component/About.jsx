@@ -4,6 +4,9 @@ import profile from '../Image/me.jpg'
 import AnimatedContent from '../AwesomeStyle/AnimatedContent/AnimatedContent'
 import SplitText from '../AwesomeStyle/SplitText/SplitText'
 import PixelTransition from '../AwesomeStyle/PixelTransition/PixelTransition'
+import GitHubContributions from './Contribution'
+import { Link } from 'react-router-dom'
+import GradientText from '../AwesomeStyle/GradientText/GradientText'
 
 function About() {
     const handleAnimationComplete = () => {
@@ -100,6 +103,30 @@ function About() {
                             like-minded developers to create impactful digital solutions.</p>
                         </div>
                     </AnimatedContent>
+                    
+                    <div className="findme">
+                        <Link to="/About">
+                            <GradientText
+                                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                animationSpeed={3}
+                                showBorder={true}
+                                className="custom-class"
+                            >
+                                Know More About Me
+                            </GradientText>
+                        </Link>
+                        <Link to="/About">
+                            <GradientText
+                                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                animationSpeed={3}
+                                showBorder={true}
+                                className="custom"
+                            >
+                                Know More About Me
+                            </GradientText>
+                        </Link>
+                    </div>
+                    
                 </div>
 
                 <PixelTransition
@@ -129,6 +156,7 @@ function About() {
                     className="custom-pixel-card"
                     />
             </div>
+            <GitHubContributions username="alghifarydaffa62"/> 
         </div>
     )
 } 

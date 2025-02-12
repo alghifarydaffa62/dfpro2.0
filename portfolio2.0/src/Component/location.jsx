@@ -1,6 +1,7 @@
 import '../style/App.css'
 import { useState, useEffect } from 'react'
 import SplitText from '../AwesomeStyle/SplitText/SplitText'
+import FadeContent from '../AwesomeStyle/FadeContent/FadeContent'
 
 function Location() {
     const [time, setTime] = useState('')
@@ -22,18 +23,10 @@ function Location() {
 
     return(
         <div className='Location'>
-            <SplitText
-                text="Surabaya, East Java - Indonesia"
-                className="text-2xl font-semibold text-center"
-                delay={150}
-                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-                easing="easeOutCubic"
-                threshold={0.2}
-                rootMargin="-50px"
-                onLetterAnimationComplete={handleAnimationComplete}
-            />
-            <h4>UTC+7 - {time}</h4>
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                <h5>Surabaya, East Java - Indonesia</h5>
+                <h5>UTC+7 - {time}</h5>
+            </FadeContent>
         </div>
     )
 }

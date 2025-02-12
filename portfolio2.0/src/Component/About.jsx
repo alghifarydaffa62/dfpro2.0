@@ -5,10 +5,10 @@ import AnimatedContent from '../AwesomeStyle/AnimatedContent/AnimatedContent'
 import SplitText from '../AwesomeStyle/SplitText/SplitText'
 import PixelTransition from '../AwesomeStyle/PixelTransition/PixelTransition'
 import GitHubContributions from './Contribution'
-import { Link } from 'react-router-dom'
 import FadeContent from '../AwesomeStyle/FadeContent/FadeContent'
 import ShinyText from '../AwesomeStyle/ShinyText/ShinyText'
 import arrow from '../Image/right.png'
+import Location from './location'
 
 function About() {
     const handleAnimationComplete = () => {
@@ -161,6 +161,7 @@ function About() {
                 
             </div>
             <GitHubContributions username="alghifarydaffa62"/> 
+            <Location/>
         </div>
     )
 } 

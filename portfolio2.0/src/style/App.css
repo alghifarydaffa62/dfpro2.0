@@ -83,8 +83,9 @@ body {
 }
 .Location {
   margin-left: 2rem;
+  margin-bottom: 1rem;
 }
-.Location h4 {
+.Location h5 {
   font-weight: 400;
 }
 .aboutme {
@@ -135,4 +136,21 @@ body {
   font-weight: 400;
   margin-bottom: 0.7rem;
 }
-
+.Skill h2 {
+  text-align: center;
+  color: #6e92d6;
+  margin-block: 2rem;
+}
+.tech {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.tech img {
+  width: 4vw;
+  height: 8vh;
+  padding: 0.8rem;
+  background-color: #141e30;
+  border-radius: 15px;
+}

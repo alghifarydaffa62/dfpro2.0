@@ -119,6 +119,15 @@ function About() {
                             </FadeContent>
                         </div>
                     </div>
+
+                    <div className="campus">
+                        <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                            <h4>Currently studying at</h4>
+                        </FadeContent>
+                        <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+                            <ShinyText text="Electronic Engineering Polytechnic Institute of Surabaya" disabled={false} speed={3} className='custom-class' />
+                        </FadeContent>
+                    </div>
                 </div>
 
                 <div className="picture">
@@ -148,15 +157,6 @@ function About() {
                         animationStepDuration={0.4}
                         className="custom-pixel-card"
                         />
-
-                    <div className="findme">
-                        <Link to="/Project">
-                            <ShinyText text="See my Project" disabled={false} speed={3} className='custom-class' />
-                        </Link>
-                        <Link to="/Contact">
-                            <ShinyText text="Contact me" disabled={false} speed={3} className='custom-class' />
-                        </Link>
-                    </div>
                 </div>
                 
             </div>

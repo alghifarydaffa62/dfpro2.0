@@ -29,11 +29,11 @@ function Skill() {
         bootstrap
     ]
     const certificate = [
-        sertifAI,
-        sertifFE,
-        sertifJS,
-        sertifReact,
-        sertifWeb,
+        {img: sertifAI, pdf: "../PDF/SertifAI.pdf"},
+        {img: sertifJS, pdf: "../PDF/SertifJS.pdf"},
+        {img: sertifReact, pdf: "../PDF/SertifReact.pdf"},
+        {img: sertifFE, pdf: "../PDF/SertifFE.pdf"},
+        {img: sertifWeb, pdf: "../PDF/SertifWeb.pdf"},
     ]
 
     return(
@@ -67,8 +67,9 @@ function Skill() {
             </FadeContent>
 
             <div className="certificate">
-                {certificate.map((sertif) => (
+                {certificate.map((sertif, index) => (
                     <AnimatedContent
+                        key={index}
                         distance={70}
                         direction="horizontal"
                         delay={50}
@@ -80,7 +81,9 @@ function Skill() {
                         threshold={0.2}
                     >
                         <div>
-                            <img src={sertif} alt="" />
+                            <a href={sertif.pdf} target="_blank" rel="noopener noreferrer">
+                                <img src={sertif.img} alt="" />
+                            </a>
                         </div>
                     </AnimatedContent>
                 ))}

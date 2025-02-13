@@ -139,13 +139,13 @@ body {
 .Skill h2 {
   text-align: center;
   color: #6e92d6;
-  margin-block: 2rem;
+  margin-block: 1rem;
 }
 .tech {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-block: 2rem;
 }
 .tech img {
   width: 4vw;
@@ -153,4 +153,17 @@ body {
   padding: 0.8rem;
   background-color: #141e30;
   border-radius: 15px;
+}
+.certificate {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  row-gap: 2rem;
+}
+
+.certificate img {
+  width: 25vw;
+  height: 35vh;
 }

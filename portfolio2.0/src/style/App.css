@@ -225,3 +225,13 @@ body {
 .box-project p {
   font-size: 0.6rem;
 }
+
+.box-project img {
+  width: 16vw;
+  height: 17vh;
+  border-radius: 5px;
+}
+.box-project button {
+  color: black;
+  padding: 0.5rem;
+}
